@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:invantory/pages/homescreen.dart';
 import 'package:invantory/pages/loginscreen.dart';
 
 void main() {

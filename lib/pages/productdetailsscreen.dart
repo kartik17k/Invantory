@@ -84,7 +84,9 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> with Single
               ),
               child: Text('Update'),
               onPressed: () {
-                // Implement stock update logic here
+                setState(() {
+                  ProductData.products[widget.productId]!["stock"] = newStock;
+                });
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Row(
@@ -106,6 +108,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> with Single
       },
     );
   }
+
 
   @override
   Widget build(BuildContext context) {
