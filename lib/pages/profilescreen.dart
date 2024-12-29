@@ -9,11 +9,11 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  final String userId = "12345";
+  final String userId = "7488";
   final String username = "John Doe";
   final String designation = "Software Engineer";
   final String companyName = "TechCorp";
-  String deviceId = "r74i88t26u";
+  String deviceId = "dsf556sad5";
 
   @override
   Widget build(BuildContext context) {
