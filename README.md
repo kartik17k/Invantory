@@ -6,9 +6,9 @@ A new Flutter project for managing inventory efficiently.
 2. Instant Product Details: Displays product info (name, stock, supervisor, etc.) after scanning.
 3. Seamless Camera Integration: Built-in scanner using device camera.
 4. Fallback Option: Allows manual entry if QR codes are unavailable or damaged.
-Offline & Online Support: Fetches data from local or remote databases.
-Error Handling: Alerts user if QR code is invalid or product not found.
-User-Friendly: Simple, intuitive UI for quick scanning.
+5. Offline & Online Support: Fetches data from local or remote databases.
+6. Error Handling: Alerts user if QR code is invalid or product not found.
+7. User-Friendly: Simple, intuitive UI for quick scanning.
 
 
 ## 🚀 Getting Started
