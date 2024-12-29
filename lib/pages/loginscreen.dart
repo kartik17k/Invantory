@@ -50,7 +50,7 @@ class _LoginPageState extends State<LoginPage> {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
-                _buildTextField(emailController, 'Email', Icons.email),
+                _buildTextField(emailController, 'UserId', Icons.person_outline_outlined),
                 const SizedBox(height: 16),
                 _buildTextField(
                   passwordController,
