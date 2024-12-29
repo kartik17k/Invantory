@@ -22,7 +22,7 @@ User-Friendly: Simple, intuitive UI for quick scanning.
 1. Clone the repository:
    ```bash
    git clone https://github.com/kartik17k/Invantory
-   cd smart_shopping_assistant
+   cd Invantory
    ```
 2. Install dependencies:
    ```bash
