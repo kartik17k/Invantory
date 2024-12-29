@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:invantory/pages/loginscreen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -33,6 +34,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           elevation: 0,
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.logout,color: Colors.red,),
+              onPressed: () {
+                _logout(context);
+              },
+            ),
+          ],
         ),
         body: Container(
           decoration: BoxDecoration(
@@ -63,7 +72,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       BoxShadow(
                         color: Colors.black.withOpacity(0.2),
                         blurRadius: 6,
-                        offset: Offset(0, 4),
+                        offset: const Offset(0, 4),
                       ),
                     ],
                   ),
@@ -132,5 +141,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ],
       ),
     );
+  }
+
+  void _logout(BuildContext context) {
+    // Navigate to Login Screen
+    Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage(),));
   }
 }
