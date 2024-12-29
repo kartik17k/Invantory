@@ -2,42 +2,13 @@
 A new Flutter project for managing inventory efficiently.
 
 ## Features
-1. Automatic Product Identification
-Scans the QR code on the product to automatically extract the product ID.
-Eliminates the need for manual input, ensuring faster and error-free product identification.
-2. Seamless Camera Integration
-   Opens the device camera for scanning directly within the app.
-   Uses a clean and intuitive UI to make scanning simple and user-friendly.
-3. Instant Retrieval of Product Details
-   After scanning the QR code, the app fetches the corresponding product details.
-   Displays information like:
-   Product name
-   Description
-   Inventory date
-   Supervisor
-   Current stock
-   Ensures a smooth user experience with real-time data display.
-4. Fallback to Manual Entry
-   Allows users to switch between QR code scanning and manual entry for flexibility.
-   Useful in cases where QR codes are damaged or unavailable.
-5. Efficient Inventory Management
-   Perfect for warehouse environments where products are tagged with QR codes.
-   Speeds up operations like stock checking, updating inventory, and reordering.
-6. Cross-Platform Compatibility
-   Works on both Android and iOS devices using Flutter’s cross-platform capabilities.
-   Uses a QR code scanning library like qr_code_scanner for high performance.
-7. Offline and Online Modes
-   Offline: Fetch product details from a local database (e.g., SQLite).
-   Online: Retrieve product details from a remote server or cloud database (e.g., Firebase, MySQL).
-8. Customizable QR Codes
-   QR codes can store additional data, like location or batch numbers, depending on the app's needs.
-   Enables future scalability for advanced features.
-9. Error Handling and Validation
-   Notifies the user if the QR code is invalid or the product ID is not found in the database.
-   Provides helpful feedback for smoother usability.
-10. User-Friendly Interaction
-    Minimalistic design ensures that even non-technical users can operate the app effectively.
-    Provides visual or haptic feedback upon successful scanning.
+1. Automatic Product ID Input: Scans QR code to fetch product ID without manual entry.
+2. Instant Product Details: Displays product info (name, stock, supervisor, etc.) after scanning.
+3. Seamless Camera Integration: Built-in scanner using device camera.
+4. Fallback Option: Allows manual entry if QR codes are unavailable or damaged.
+Offline & Online Support: Fetches data from local or remote databases.
+Error Handling: Alerts user if QR code is invalid or product not found.
+User-Friendly: Simple, intuitive UI for quick scanning.
 
 
 ## 🚀 Getting Started
