@@ -233,12 +233,75 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> with Single
                             padding: EdgeInsets.all(16.0),
                             child: Column(
                               children: [
-                                _buildInfoRow(Icons.calendar_today, 'Inventory Date', productData["inventoryDate"]),
-                                _buildInfoRow(Icons.person, 'Supervisor', productData["supervisor"]),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 8.0),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        child: Row(
+                                          children: [
+                                            Icon(Icons.calendar_today, size: 20, color: Colors.white70),
+                                            SizedBox(width: 8),
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  'Inventory Date',
+                                                  style: TextStyle(
+                                                    color: Colors.white70,
+                                                    fontSize: 14,
+                                                  ),
+                                                ),
+                                                SizedBox(height: 4),
+                                                Text(
+                                                  productData["inventoryDate"],
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 16,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      SizedBox(width: 16), // Spacer between the two columns
+                                      Expanded(
+                                        child: Row(
+                                          children: [
+                                            Icon(Icons.person, size: 20, color: Colors.white70),
+                                            SizedBox(width: 8),
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  'Supervisor',
+                                                  style: TextStyle(
+                                                    color: Colors.white70,
+                                                    fontSize: 14,
+                                                  ),
+                                                ),
+                                                SizedBox(height: 4),
+                                                Text(
+                                                  productData["supervisor"],
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 16,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
                                 _buildInfoRow(Icons.inventory_2, 'Stock', productData["stock"].toString()),
                               ],
                             ),
                           ),
+
                         ],
                       ),
                     ),

@@ -134,7 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     productIdController.text.trim(),
                   ),
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.black, backgroundColor: Colors.tealAccent, padding: EdgeInsets.symmetric(vertical: 15),
+                    foregroundColor: Colors.black, backgroundColor: Colors.red, padding: EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -146,7 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       SizedBox(width: 8),
                       Text(
                         'Search Product',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold,),
                       ),
                     ],
                   ),
